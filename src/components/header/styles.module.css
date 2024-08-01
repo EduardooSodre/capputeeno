@@ -1,0 +1,111 @@
+.header {
+  width: 100%;
+  max-width: 90rem;
+  height: 5rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 90rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10.5rem;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.nav {
+  padding: 0 29.5rem 0 16rem;
+}
+
+.logo {
+  color: #5d5d6d;
+  font-family: Saira Stencil One;
+  font-style: 2.5rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  cursor: pointer;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: help;
+}
+
+.searchInput {
+  width: 22rem;
+  height: 2.625rem;
+  font-family: Saira;
+  background-color: #f3f5f6;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem; /* Padding para o input */
+  padding-right: 0.125rem; /* espaço para a imagem */
+}
+.searchIcon {
+  position: absolute;
+  margin-right: 0.5rem;
+  right: 0.625rem;
+  color: #737380;
+  cursor: pointer;
+}
+
+.button_shopping {
+  padding-top: 1rem;
+  margin-left: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 1.65rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0.4rem;
+}
+
+.button_shopping__icon {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -0.287rem;
+  left: -1.312rem;
+}
+.shopping__number {
+  position: relative;
+  line-height: 2.2rem;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 0.38rem;
+  z-index: 3;
+}
+.purchase {
+  height: 1.625rem;
+  width: 0.063rem;
+  position: relative;
+}
+.circle__red {
+  padding-top: 1rem;
+  margin-left: 2rem;
+  position: absolute;
+  top: 0.9rem;
+  left: 1.4rem;
+  border-radius: 50%;
+  background-color: red;
+  width: 1.163rem;
+  height: 1.163rem;
+  z-index: 2;
+}
+
+
