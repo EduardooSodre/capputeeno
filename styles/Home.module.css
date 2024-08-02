@@ -1,25 +1,53 @@
 .container {
-  background-color: #F0F0F5;
+  background-color: #f0f0f5;
   width: 90rem;
   height: calc(100vh - 80px);
 }
 
-.category{
+.category {
   display: flex;
   margin-inline: 16rem;
 }
 
-.category div{
+.category div {
   padding-top: 2.125rem;
   padding-right: 2.5rem;
 }
 
 .main {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-.organization{
+.main nav {
   padding-top: 2.125rem;
 }
+
+.navegation{
+  width: 11rem;
+  height: 8.25rem;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  padding-top: 0.75rem;
+  padding-left: 1rem;
+
+ 
+}
+.navegation a{
+  text-decoration: none;
+  color: #737380;
+  font-family: saira;
+  font-size: 0.875rem;
+}
+
+.set_nav{
+  padding-left: 1rem;
+  
+}
+
+.nav_list li {
+
+  list-style-type: none;
+}
+
+

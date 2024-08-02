@@ -49,8 +49,8 @@
   background-color: #f3f5f6;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem; /* Padding para o input */
-  padding-right: 0.125rem; /* espaço para a imagem */
+  padding: 0.5rem 1rem;
+  padding-right: 0.125rem; 
 }
 .searchIcon {
   position: absolute;
