@@ -25,19 +25,21 @@ export function Header() {
             height={24}
             className={styles.searchIcon}
           />
-        </div>
+          </div>
         <div className={styles.purchase}>
           <div className={styles.circle__red} />
-          <div className={styles.button_shopping}>
+          <div className={styles.button_shopping}> 
+            <div className={styles.shopping__number}>2</div>
+          </div>
+        </div>
             <img
               className={styles.button_shopping__icon}
               loading="lazy"
               alt=""
               src="/assets/shopping-bag.svg"
-            />
-            <div className={styles.shopping__number}>2</div>
-          </div>
-        </div>
+              />
+           
+              
       </section>
     </header>
   );

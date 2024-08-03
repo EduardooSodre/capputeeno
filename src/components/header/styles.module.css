@@ -8,12 +8,8 @@
 }
 
 .content {
-  width: 100%;
-  max-width: 90rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 10.5rem;
 }
 
 .content a {
@@ -21,7 +17,7 @@
 }
 
 .nav {
-  padding: 0 29.5rem 0 16rem;
+  padding: 0 26.5rem 0 16rem;
 }
 
 .logo {
@@ -38,58 +34,45 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: auto;
   cursor: help;
 }
 
 .searchInput {
-  width: 22rem;
+  width: 22.188rem;
   height: 2.625rem;
   font-family: Saira;
   background-color: #f3f5f6;
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  padding-right: 0.125rem; 
+  margin-left: -4rem ;
 }
 .searchIcon {
   position: absolute;
-  margin-right: 0.5rem;
-  right: 0.625rem;
+  right: 1.725rem;
   color: #737380;
   cursor: pointer;
 }
 
 .button_shopping {
-  padding-top: 1rem;
-  margin-left: 2rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  position: absolute;
-  left: 1.65rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 0.4rem;
 }
 
 .button_shopping__icon {
   height: 2rem;
-  width: 2rem;
-  position: absolute;
-  top: -0.287rem;
-  left: -1.312rem;
+  padding-left: 1rem;
 }
+
 .shopping__number {
-  position: relative;
-  line-height: 2.2rem;
-  font-weight: 500;
-  display: inline-block;
-  min-width: 0.38rem;
-  z-index: 3;
+  position: absolute;
+  padding-top: 0.7rem;
+  margin-left: 2.5rem;
+  z-index: 2;
 }
+
+
 .purchase {
   height: 1.625rem;
   width: 0.063rem;
@@ -100,12 +83,13 @@
   margin-left: 2rem;
   position: absolute;
   top: 0.9rem;
-  left: 1.4rem;
+  left: 0.2rem;
   border-radius: 50%;
   background-color: red;
   width: 1.163rem;
   height: 1.163rem;
   z-index: 2;
+ 
 }
 
 

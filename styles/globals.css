@@ -4,7 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 :root{
   font-family: "Saira", Saira Stencil One;
+}
+html{
+ width: 90rem; 
 }
