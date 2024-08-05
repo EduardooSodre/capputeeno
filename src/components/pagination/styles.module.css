@@ -1,0 +1,35 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 2rem;
+  justify-content: end;
+  margin-bottom: 2rem;
+}
+
+.pagination ul {
+  display: flex;
+  list-style: none;
+  margin-right: 10rem;
+}
+
+.pagination li {
+  margin: 0 0.03rem;
+}
+
+.pagination a {
+  font-family: Saira;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #e9e9f0;
+  color: #737380;
+  padding: 0rem 0.6rem;
+  border-radius: 0.5rem;
+  border: solid transparent;
+}
+
+.pagination a:hover {
+  background-color: #f0f0f5;
+  color: #ffa585;
+  border-color: #ffa585;
+}

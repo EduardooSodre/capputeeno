@@ -1,0 +1,16 @@
+
+
+.productList {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0rem 10rem 0 10rem;
+}
+  
+  @media (max-width: 768px) {
+    .productList {
+     width: auto;
+    }
+  }
+  

@@ -1,0 +1,126 @@
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+  
+.productItem {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+  
+  .productItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productImage {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: auto;
+  }
+  
+  .productName {
+    font-family: saira;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .productPrice {
+    margin-top: 0.5rem;
+    color: #737380;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+  }
+  
+
+
+  @media (max-width: 1920px) {
+    .productList {
+      margin-inline: 10rem;
+    }
+  
+    .main nav {
+      padding-right: 8rem;
+    }
+  }
+  
+  
+  @media (max-width: 1440px) {
+    .productList {
+      margin-inline: 8rem;
+    }
+  
+    .main nav {
+      padding-right: 6rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .productList {
+      margin-inline: 6rem;
+    }
+  
+    .main nav {
+      padding-right: 4rem;
+    }
+  }
+  
+  @media (max-width: 770) {
+    .container {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    .productList {
+      margin-inline: 2rem;
+      flex-direction: column;
+    }
+  
+    .productItem {
+      margin-top: 1.3rem;
+      margin-right: 2rem;
+      width: 100%;
+    }
+  
+    .productItem {
+      width: 100%;
+      height: auto;
+      position: static;
+      margin-top: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    .productList {
+      margin-inline: 1rem;
+    }
+  
+    .productItem {
+      padding-left: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .productList {
+      margin-inline: 0.5rem;
+    }
+  
+    .productItem {
+      padding-left: 0.25rem;
+    }
+  }
+  
+  
