@@ -24,3 +24,9 @@
     gap: 6rem; 
   }
 }
+
+@media (max-width: 391px) {
+  .productList{
+    margin-inline-start: 4.3rem;
+  }
+}

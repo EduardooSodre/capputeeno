@@ -62,3 +62,8 @@
     margin-right: 5.5rem;
   }
 }
+@media (max-width: 391px) {
+  .pagination ul {
+    margin-right: 4.9rem;
+  }
+}
