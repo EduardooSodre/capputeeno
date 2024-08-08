@@ -1,23 +1,25 @@
 .header {
-  width: 100%;
+  width: auto;
   height: 5rem;
   background-color: #ffffff;
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .logo {
+  width: auto;
   color: #5d5d6d;
   font-family: "Saira Stencil One", Saira;
   font-weight: 400;
   font-size: 2.5rem;
   cursor: pointer;
   margin-inline-start: 10rem;
-  margin-right: 30rem;
+  margin-inline-end: 30rem;
 }
 
 .searchContainer {
-  width: 100%;
+  width: 22rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -35,6 +37,8 @@
 }
 
 .searchIcon {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 1rem;
   color: #737380;
@@ -45,7 +49,6 @@
   background-color: transparent;
   border: none;
   position: relative;
-  margin-right: 10rem;
 }
 
 .button_shopping__icon {
@@ -70,6 +73,7 @@
   color: #fff;
   font-size: 0.75rem;
 }
+
 
 @media (max-width: 768px) {
   .header {

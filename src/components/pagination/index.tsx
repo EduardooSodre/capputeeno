@@ -1,4 +1,4 @@
-import styles from '../pagination/styles.module.css';
+import styles from './styles.module.css';
 
 const Pagination = () => {
   return (

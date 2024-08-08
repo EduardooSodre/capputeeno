@@ -10,7 +10,7 @@
 .pagination ul {
   display: flex;
   list-style: none;
-  margin-right: 10rem;
+  margin-right: 15rem;
 }
 
 .pagination li {
