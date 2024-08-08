@@ -13,12 +13,10 @@ interface ProductItemProps {
 
 const ProductItem = ({ image, name, price, id }: ProductItemProps) => {
   return (
-    <Link href={`/products/${id}`} legacyBehavior>
-      <a className={styles.productItem}>
+    <Link href={`/${id}`} className={styles.productItem}>
         <img src={image} alt={name} className={styles.productImage} />
         <div className={styles.productName}>{name}</div>
         <div className={styles.productPrice}>{price}</div>
-      </a>
     </Link>
   );
 };

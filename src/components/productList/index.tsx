@@ -19,8 +19,8 @@ const ProductList = () => {
 
   return (
     <div className={styles.productList}>
-      {products.map((product) => (
-        <ProductItem key={product.id} {...product} />
+      {products.map((ProductList) => (
+        <ProductItem key={ProductList.id} {...ProductList} />
       ))}
     </div>
   );

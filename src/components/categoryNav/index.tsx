@@ -10,7 +10,7 @@ const CategoryNav = () => {
   return (
     <>
       <div className={styles.category}>
-        <div className={styles.category}>
+        <section className={styles.category}>
           <div>
             <a href="#">TODOS OS PRODUTOS</a>
           </div>
@@ -20,7 +20,7 @@ const CategoryNav = () => {
           <div>
             <a href="#">CANECAS</a>
           </div>
-        </div>
+        </section>
         <div className={styles.category}>
           <nav className={styles.navegation}>
             <div className={styles.set_nav} onClick={toggleMenu}>

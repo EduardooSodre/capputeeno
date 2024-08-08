@@ -5,12 +5,11 @@
   font-size: 16px;
   display: flex;
   margin-top: 2.125rem;
-  padding-inline-start: 6rem;
+  padding-inline-start: 4rem;
 }
 
 .category div {
   padding-left: 2rem;
-
 }
 
 .category a {
@@ -22,7 +21,7 @@
   line-height: 22px;
 }
 
-.category div a:hover {
+.category section a:hover {
   font-weight: 600;
   transform: translateY(-5px);
   color: black;
@@ -43,7 +42,7 @@
 }
 
 .navegation {
-  margin-left: 17.9rem
+  margin-left: 17.9rem;
 }
 
 .navegation ul {
@@ -76,4 +75,48 @@
   margin-bottom: 0.5rem;
 }
 
+@media (min-width: 1530px) {
+  .navegation {
+    margin-left: 23.5rem;
+  }
+}
 
+@media (min-width: 1919px) {
+  .navegation {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 1441px) {
+  .navegation {
+    margin-left: 21rem;
+  }
+
+}
+
+@media (max-width: 1025px) {
+  .navegation {
+    margin-left: 14.3rem;
+  }
+  .category section {
+    margin-left: -4rem;
+  }
+}
+@media (max-width: 769px) {
+  .navegation {
+    margin-left: 8rem;
+  }
+  .category section {
+    display: block;
+  }
+}
+
+@media (max-width: 426px) {
+  .navegation {
+    margin-left: 1rem;
+  }
+
+  .category section {
+    margin-left: -8rem;
+  }
+}

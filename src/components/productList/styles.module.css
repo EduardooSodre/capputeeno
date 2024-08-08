@@ -6,4 +6,21 @@
   margin-inline-start: 10rem;
 }
   
-  
+@media (max-width: 1025px) {
+  .productList {
+    gap: 2.3rem;
+    margin-inline-start: 6rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .productList {
+    gap: 2.5rem; 
+  }
+}
+
+@media (max-width: 769px) {
+  .productList {
+    gap: 6rem; 
+  }
+}

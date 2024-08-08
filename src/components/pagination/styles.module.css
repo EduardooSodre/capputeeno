@@ -33,3 +33,32 @@
   color: #ffa585;
   border-color: #ffa585;
 }
+
+@media (min-width: 1919px) {
+  .pagination ul {
+    margin-right: 10rem;
+  }
+}
+
+@media (max-width: 1441px) {
+  .pagination ul {
+    margin-right: 10rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .pagination ul {
+    margin-right: 5rem;
+  }
+}
+@media (max-width: 769px) {
+  .pagination ul {
+    margin-right: 3.6rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .pagination ul {
+    margin-right: 5.5rem;
+  }
+}

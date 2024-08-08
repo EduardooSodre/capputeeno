@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>capputeenoo</div>
+      <a href="/" className={styles.logo}>capputeenoo</a>
       <div className={styles.searchContainer}>
         <input type="text" className={styles.searchInput} placeholder="Procurando por algo específico?" />
         <div className={styles.searchIcon}><img src="assets/search-loupe.svg" alt="Search Icon" /></div>
