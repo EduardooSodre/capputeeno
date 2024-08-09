@@ -40,6 +40,12 @@
   }
 }
 
+@media (min-width: 1530px) {
+  .pagination ul {
+    margin-right: 10rem;
+  }
+}
+
 @media (max-width: 1441px) {
   .pagination ul {
     margin-right: 10rem;

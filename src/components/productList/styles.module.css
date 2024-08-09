@@ -5,6 +5,12 @@
   gap: 2rem;
   margin-inline-start: 10rem;
 }
+
+@media (max-width: 1576px) {
+  .productList {
+  gap: 3.7rem;
+  }
+}
   
 @media (max-width: 1025px) {
   .productList {
@@ -13,11 +19,6 @@
   }
 }
 
-@media (max-width: 1025px) {
-  .productList {
-    gap: 2.5rem; 
-  }
-}
 
 @media (max-width: 769px) {
   .productList {
