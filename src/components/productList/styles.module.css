@@ -25,6 +25,14 @@
   }
 }
 
+@media (max-width: 415px) {
+  .productList {
+    margin-inline-start: 5.3rem;
+    gap: 3rem; 
+  }
+}
+
+
 @media (max-width: 391px) {
   .productList{
     margin-inline-start: 4.3rem;

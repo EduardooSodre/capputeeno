@@ -61,6 +61,14 @@
   .pagination ul {
     margin-right: 5.5rem;
   }
+
+  @media (max-width: 415px) {
+    .pagination ul {
+      margin-right: 5.3rem;
+    }
+  }
+
+
 }
 @media (max-width: 391px) {
   .pagination ul {
