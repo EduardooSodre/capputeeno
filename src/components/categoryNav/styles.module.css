@@ -117,6 +117,8 @@
 @media (max-width: 426px) {
   .category{
     flex-direction: column;
+    display: flex;
+    justify-self: center;
   }
   .navegation {
     margin-left: 1rem;
