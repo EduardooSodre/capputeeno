@@ -102,7 +102,12 @@
     margin-inline-end: 24.5rem;
   }
   .searchContainer {
-    width: 35%;
+    width: 27%;
+  }
+}
+@media (min-width: 1440px) {
+  .header a {
+    margin-right: 32rem;
   }
 }
 
