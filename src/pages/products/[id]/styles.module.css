@@ -102,7 +102,7 @@
     display: flex;
     align-items: center;
     padding-left: 10.1rem;
-   
+    cursor: pointer;
 }
 
 .button_shopping__icon{

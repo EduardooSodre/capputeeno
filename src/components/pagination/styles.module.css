@@ -87,3 +87,9 @@
     margin-right: 4.9rem;
   }
 }
+
+@media (max-width: 376px) {
+  .pagination ul {
+    margin: 0 3.8rem;
+  }
+}

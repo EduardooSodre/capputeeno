@@ -108,21 +108,34 @@
     margin-left: -4rem;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .navegation {
-    margin-left: 8rem;
-  }
-  .category section {
-    display: block;
+    margin-left: 7rem;
   }
 }
 
 @media (max-width: 426px) {
+  .category{
+    flex-direction: column;
+  }
   .navegation {
     margin-left: 1rem;
   }
 
   .category section {
-    margin-left: -8rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 376px) {
+  .category{
+    flex-direction: column;
+  }
+
+
+  .category section {
+    display: flex;
+    align-items: center;
   }
 }

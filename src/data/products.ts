@@ -91,6 +91,8 @@ export interface Product {
       price: 'R$ 92,00',
       description: 'Aqui vem um texto descritivo do produto, esta caixa de texto servirá apenas de exemplo para que simule algum texto que venha a ser inserido nesse campo, descrevendo tal produto.',
     },
+
+    
   ];
   
   export default products;
