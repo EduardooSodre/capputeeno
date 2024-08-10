@@ -1,12 +1,18 @@
 import Head from 'next/head';
+import ProductList from './productList';
+import Pagination from '../components/pagination';
+import CategoryNav from '../components/categoryNav';
 
 const Home = () => {
   return (
     <>
       <Head>
         <title>Capputeeno</title>
-      </Head>
-
+      </Head>     
+      <CategoryNav/>  
+      <Pagination/>
+      <ProductList />
+      <Pagination/> 
     </>
   );
 };

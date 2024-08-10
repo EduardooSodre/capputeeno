@@ -25,7 +25,7 @@ const CategoryNav = () => {
           <nav className={styles.navegation}>
             <div className={styles.set_nav} onClick={toggleMenu}>
               Organizar por
-              <img src="assets/navegation.svg" alt="ícone de navegação" />
+              <img src="/assets/navegation.svg" alt="ícone de navegação" />
             </div>
 
             <ul

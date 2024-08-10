@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   margin-inline-start: 10rem;
+  text-decoration: none;
 }
 
 @media (max-width: 1576px) {
@@ -11,6 +12,12 @@
   gap: 3.7rem;
   }
 }
+@media (max-width: 1440px) {
+  .productList {
+  gap: 2.3rem;
+  }
+}
+
   
 @media (max-width: 1025px) {
   .productList {

@@ -1,4 +1,4 @@
-import ProductItem from '../productItem';
+import ProductItem from '@/src/pages/productItem';
 import styles from './styles.module.css';
 
 const ProductList = () => {
@@ -19,8 +19,8 @@ const ProductList = () => {
 
   return (
     <div className={styles.productList}>
-      {products.map((ProductList) => (
-        <ProductItem key={ProductList.id} {...ProductList} />
+      {products.map((productList) => (
+        <ProductItem key={productList.id} {...productList} />
       ))}
     </div>
   );
