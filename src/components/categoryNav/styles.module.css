@@ -20,13 +20,19 @@
   font-weight: 400;
   line-height: 22px;
 }
+.activeCategory {
+  font-weight: 600;
+  transform: translateY(-5px);
+  color: black;
+  font-size: 1.2rem;
+  border-bottom: 4px solid #ffa585;
+}
 
 .category section a:hover {
   font-weight: 600;
   transform: translateY(-5px);
   color: black;
   font-size: 1.2rem;
-  border-bottom: 4px solid #ffa585;
 }
 
 .set_nav {

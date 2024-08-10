@@ -1,16 +1,37 @@
+import React, { useState } from 'react';
 import styles from './styles.module.css';
 
 const Pagination = () => {
+  const [selectedPage, setSelectedPage] = useState(1);
+
+  const handlePageClick = (page: number) => {
+    setSelectedPage(page);
+  };
+
   return (
     <div className={styles.pagination}>
       <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#"><img src="/assets/set-left.svg" alt=""/></a></li>
-        <li><a href="#"><img src="/assets/set-right.svg" alt="" /></a></li>
+        {[1, 2, 3, 4, 5].map((page) => (
+          <li key={page}>
+            <a
+              href="#"
+              className={selectedPage === page ? styles.active : ''}
+              onClick={() => handlePageClick(page)}
+            >
+              {page}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a href="#" onClick={() => handlePageClick(selectedPage > 1 ? selectedPage - 1 : 1)}>
+            <img src="/assets/set-left.svg" alt="Página anterior" />
+          </a>
+        </li>
+        <li>
+          <a href="#" onClick={() => handlePageClick(selectedPage < 5 ? selectedPage + 1 : 5)}>
+            <img src="/assets/set-right.svg" alt="Próxima página" />
+          </a>
+        </li>
       </ul>
     </div>
   );

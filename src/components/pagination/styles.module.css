@@ -28,6 +28,12 @@
   border: solid transparent;
 }
 
+.pagination .active {
+  background-color: #f0f0f5;
+  color: #ffa585;
+  border-color: #ffa585;
+  
+}
 .pagination a:hover {
   background-color: #f0f0f5;
   color: #ffa585;
@@ -48,7 +54,7 @@
 
 @media (max-width: 1441px) {
   .pagination ul {
-    margin-right: 8.5rem;
+    margin-right: 8.rem;
   }
 }
 
