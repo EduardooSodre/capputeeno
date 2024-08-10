@@ -155,19 +155,18 @@
     width: 100%;
   }
   .button_buy {
-    margin-top: -65rem;
+    margin-top: -40rem;
     width: 23rem;
-    padding-inline-start: 6.5rem;
   }
 }
 
-@media (max-width: 426px){
+@media (max-width: 376px){
   .productImage {
-    width: 21.5em;
+    width: 21.5rem;
     height: 20rem;
   }
   .button_buy {
-    margin-top: -66rem;
+    margin-top: -40rem;
     width: 20rem;
     padding-inline-start: 5rem;
   }
