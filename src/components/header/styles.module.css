@@ -13,10 +13,10 @@
   font-family: "Saira Stencil One", Saira;
   font-weight: 400;
   font-size: 2.5rem;
-  cursor: pointer;
   margin-inline-start: 10rem;
-  margin-inline-end: 30rem;
+  margin-inline-end: 36rem;
   text-decoration: none;
+  cursor: default;
 }
 
 .searchContainer {
@@ -38,8 +38,6 @@
 }
 
 .searchIcon {
-  display: flex;
-  align-items: center;
   position: absolute;
   right: 1rem;
   color: #737380;
@@ -75,39 +73,34 @@
   font-size: 0.75rem;
 }
 
-@media (max-width: 1025px) {
-  .header a {
-    margin-left: 6rem;
-  }
+
+
+@media (max-width: 1921px) {
   .logo {
-    padding-left: -10rem;
-    margin-inline-end: 14.5rem;
+    margin-inline-end: 57.3rem;
+  }
+}
+
+@media (min-width: 1531px) {
+  .logo {
+    margin-right: 35.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .logo {
+    margin-inline-end: 32rem;
+  }
+}
+
+@media (max-width: 1025px) {
+
+  .logo {
+    margin-left: 6rem;
+    margin-inline-end: 16.5rem;
   }
   .searchContainer {
     width: 30%;
-  }
-}
-
-@media (min-width: 1919px) {
-  .header a {
-    margin-right: 39rem;
-  }
-}
-
-@media (min-width: 1530px) {
-  .header a {
-    margin-left: 10rem;
-  }
-  .logo {
-    margin-inline-end: 24.5rem;
-  }
-  .searchContainer {
-    width: 27%;
-  }
-}
-@media (min-width: 1440px) {
-  .header a {
-    margin-right: 32rem;
   }
 }
 
@@ -117,7 +110,7 @@
   }
   .logo {
     padding-left: -10rem;
-    margin-inline-end: 10rem;
+    margin-inline-end: 11.3rem;
   }
   .searchContainer {
     width: 20%;
@@ -128,13 +121,43 @@
 }
 
 @media (max-width: 426px) {
-  .header a {
-    margin-left: 1rem;
-  }
+
   .logo {
-    margin-inline-end: 1.5rem;
+    margin-left: 1.5rem;
+    margin-inline-end:4rem;
   }
   .searchContainer {
-    width: 12%;
+    width: 10%;
+  }
+  .searchIcon {
+    left: 0.5rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .logo {
+    margin-left: 1rem;
+    margin-inline-end: 2rem;
+  }
+  .searchContainer {
+    width: 10%;
+  }
+  .searchIcon {
+    left: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    margin-left: 0rem;
+    margin-inline-end: 1.3rem;
+  }
+
+  .searchContainer {
+    margin-right: 0.5rem;
+  }
+
+  .searchIcon {
+    left: 0.3rem;
   }
 }

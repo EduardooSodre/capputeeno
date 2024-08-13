@@ -81,15 +81,15 @@
   margin-bottom: 0.5rem;
 }
 
-@media (min-width: 1530px) {
+@media (max-width: 1921px) {
   .navegation {
-    margin-left: 23.5rem;
+    margin-left: 33rem;
   }
 }
 
-@media (min-width: 1919px) {
-  .navegation {
-    margin-left: 3rem;
+@media (min-width: 1531px) {
+  .navegation{
+    margin-left: 23.5rem;
   }
 }
 
@@ -121,7 +121,7 @@
     justify-self: center;
   }
   .navegation {
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
 
   .category section {
@@ -131,13 +131,20 @@
 }
 
 @media (max-width: 376px) {
-  .category{
-    flex-direction: column;
+  .navegation {
+    margin-left: 1.5rem;
   }
+}
 
-
-  .category section {
+@media (max-width: 320px) {
+  .category{
     display: flex;
-    align-items: center;
+    padding-left: 0%;
+  }
+  .category a{
+    margin-left: 6.5rem;
+  }
+  .navegation {
+    margin-left: 3rem;
   }
 }

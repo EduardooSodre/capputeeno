@@ -40,38 +40,39 @@
   border-color: #ffa585;
 }
 
-@media (min-width: 1919px) {
-  .pagination ul {
-    margin-right: 10rem;
+@media (max-width: 1921px) {
+  .pagination {
+    margin-left: -2.3rem;
   }
 }
 
 @media (min-width: 1530px) {
   .pagination ul {
-    margin-right: 10rem;
+    margin-right: 7.5rem;
   }
 }
 
 @media (max-width: 1440px) {
   .pagination ul {
-    margin-right: 8.rem;
+    margin-right: 6.5rem;
   }
 }
 
 @media (max-width: 1025px) {
   .pagination ul {
-    margin-right: 5rem;
+    margin-right: 2.8rem;
   }
 }
 @media (max-width: 769px) {
   .pagination ul {
-    margin-right: 3.6rem;
+    margin-right: 1.5rem;
   }
+
 }
 
 @media (max-width: 426px) {
   .pagination ul {
-    margin-right: 5.5rem;
+    margin-right: 2.9rem;
   }
 
   @media (max-width: 415px) {
@@ -90,6 +91,12 @@
 
 @media (max-width: 376px) {
   .pagination ul {
-    margin: 0 3.8rem;
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .pagination ul {
+    margin: 0 0rem;
   }
 }

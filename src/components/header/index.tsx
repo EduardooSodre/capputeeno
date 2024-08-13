@@ -3,10 +3,10 @@ import styles from "./styles.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <a href="/" className={styles.logo}>capputeeno</a>
+      <h1 className={styles.logo}>capputeeno</h1>
       <div className={styles.searchContainer}>
         <input type="text" className={styles.searchInput} placeholder="Procurando por algo específico?" />
-        <div className={styles.searchIcon}><img src="/assets/search-loupe.svg" alt="Search Icon" /></div>
+       <img src="/assets/search-loupe.svg" alt="Search Icon" className={styles.searchIcon}/>
       </div>
       <button className={styles.button_shopping}>
         <img src="/assets/shopping-bag.svg" className={styles.button_shopping__icon} alt="Shopping Cart" />
