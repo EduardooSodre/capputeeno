@@ -1,15 +1,28 @@
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import products from '@/src/data/products';
 import styles from './styles.module.css';
+
+
 
 const ProductPage = () => {
   const router = useRouter();
   const { id } = router.query;
   const product = products.find((p) => p.id === Number(id));
 
+
+  
+
   if (!product) {
     return <div>Produto não encontrado</div>;
   }
+
+  const [cartCount, setCartCount] = useState(0);
+  const handleAddToCart = () => {
+    // Atualiza o estado do carrinho aqui (implementação simplificada)
+    setCartCount(cartCount + 1);
+    router.push('/cart');
+  };
 
   return (
 <div className={styles.productDetail}>
@@ -25,7 +38,7 @@ const ProductPage = () => {
           <h2>DESCRIÇÃO</h2>
           <p className={styles.description}>{product.description}</p>
 
-          <button className={styles.button_buy}>
+          <button onClick={handleAddToCart}  className={styles.button_buy}>
           <img className={styles.button_shopping__icon}  src="/assets/button-buy.png" alt="Shopping Cart" />Adicionar ao carrinho
           </button>
         </div>
