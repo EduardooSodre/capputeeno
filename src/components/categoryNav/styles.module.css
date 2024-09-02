@@ -89,6 +89,13 @@
 }
 
 
+
+@media (min-width: 1440px){
+  .navegation{
+    margin-left: 49%;
+    }
+}
+
 @media (max-width: 1024px){
   .activeCategory {
     font-size: 1rem;
