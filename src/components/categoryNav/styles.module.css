@@ -32,7 +32,7 @@
 .navegation{
   width: 100%;
   margin-right: 20%;
-  padding-left: 50%;
+  margin-left: 56%;
   }
 
 .navLink {
@@ -41,10 +41,10 @@
   font-size: 0.875rem;
   font-weight: 400;
 }
+
 .navLink.active {
   font-weight: 600;
   font-size: 0.875rem;
-
 }
 
 
@@ -88,7 +88,22 @@
   list-style-type: none;
   margin-bottom: 0.5rem;
 }
-
+@media (max-width: 768px){
+  .category { 
+    width: 100%;
+    display: block;
+  }
+  .category div { 
+    margin: 4% 0 1% 0;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+  }
+  .navegation{
+    margin-right: 0%;
+    margin-left: 60%;
+    }
+}
 
 @media (max-width: 425px){
   .category { 
