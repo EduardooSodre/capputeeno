@@ -99,9 +99,13 @@
     justify-content: center;
     margin-right: 5%;
   }
+  .activeCategory {
+    font-weight: 600;
+    font-size: 1rem;
+  }
   .navegation{
-    margin-right: 0%;
-    margin-left: 60%;
+    margin-right: 10%;
+    margin-left: 43%;
     }
 }
 
