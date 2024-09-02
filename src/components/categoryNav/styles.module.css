@@ -19,7 +19,6 @@
   font-size: 1rem;
   font-weight: bold;
   font-weight: 400;
-  
 }
 
 .activeCategory {
@@ -31,8 +30,8 @@
 
 .navegation{
   width: 100%;
-  margin-right: 20%;
-  margin-left: 56%;
+  margin-right: 0%;
+  margin-left: 50%;
   }
 
 .navLink {
@@ -88,6 +87,18 @@
   list-style-type: none;
   margin-bottom: 0.5rem;
 }
+
+
+@media (max-width: 1024px){
+  .activeCategory {
+    font-size: 1rem;
+  }
+
+  .navegation{
+    margin-left: 43%;
+    }
+}
+
 @media (max-width: 768px){
   .category { 
     width: 100%;
@@ -104,8 +115,8 @@
     font-size: 1rem;
   }
   .navegation{
-    margin-right: 0%;
-    margin-left: 60%;
+    margin-right: 5%;
+    margin-left: 65%;
     }
 }
 
@@ -127,4 +138,28 @@
     margin-right: 10%;
     margin-left: 43%;
     }
+}
+
+@media (max-width: 375px){
+
+  .category div a{
+    font-size: 12px;
+  }
+  .activeCategory {
+    font-size: 0.75rem;
+  }
+
+  .navegation ul.active {
+    width: 10rem;
+    height: 8rem;
+    
+  }
+  .navegation{
+    margin-right: 0%;
+    margin-left: 46%;
+    }
+
+  .category div {
+    font-size: 0.75rem;
+  }
 }
