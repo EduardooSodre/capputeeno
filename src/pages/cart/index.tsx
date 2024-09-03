@@ -18,14 +18,8 @@ const CartPage = () => {
 
   return (
     <div className={styles.cartPage}>
-      {/* Botão de voltar */}
       <button className={styles.returnButton} onClick={() => router.back()}>
-        <img
-          src="/assets/return.png"
-          alt="Voltar"
-          className={styles.returnIcon}
-        />{" "}
-        <p>Voltar</p>
+        <img src="/assets/return.png" alt="Voltar" className={styles.returnIcon} /> <p>Voltar</p>
       </button>
 
       <h1>SEU CARRINHO</h1>

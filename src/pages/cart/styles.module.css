@@ -4,9 +4,15 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+
+}
+.returnIcon {
+  width: 100%;
+  height: 100%;
 }
 
 .returnButton p {
+  margin-bottom: 1rem;
   margin-left: 0.75rem;
   font-family: Saira;
   font-weight: 500;
@@ -14,8 +20,8 @@
   color: #617480;
 }
 
-.cartPage {
 
+.cartPage {
   padding-left: 10%;
   padding-top: 25px;
 }
@@ -94,10 +100,6 @@
 .orderSummary {
   width: 352px;
   height: 700px;
-  top: 120px;
-  left: 928px;
-  gap: 0px;
-  opacity: 0px;
   background-color: #ffffff;
 }
 .orderSummary h2 {
@@ -106,7 +108,6 @@
   font-weight: 600;
   line-height: 30px;
   text-align: left;
-
   padding: 24px 16px 16px 24px;
 }
 
