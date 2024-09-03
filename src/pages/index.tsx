@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import ProductList from './productList';
+import ProductList from '../pages/productList';
 import Pagination from '../components/pagination';
 import CategoryNav from '../components/categoryNav';
 

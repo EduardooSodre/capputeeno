@@ -1,24 +1,152 @@
-.cart {
-    padding: 20px;
-  }
-  
-  .cartItems {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .cartItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .cartTotal {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
+.returnButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.returnButton p {
+  margin-left: 0.75rem;
+  font-family: Saira;
+  font-weight: 500;
+  font-size: 14px;
+  color: #617480;
+}
+
+.cartPage {
+
+  padding-left: 10%;
+  padding-top: 25px;
+}
+.cartPage h1 {
+  font-family: Saira;
+  font-weight: 500;
+  font-size: 24px;
+  color: #41414d;
+  line-height: 36px;
+}
+
+.cartPage h2 {
+  font-family: Saira;
+  font-weight: 300;
+  font-size: 20px;
+  color: #41414d;
+  line-height: 30px;
+}
+
+.cartPage p {
+  font-family: Saira;
+  font-weight: 400;
+  font-size: 12px;
+  color: #41414d;
+  line-height: 18px;
+  margin-top: 19px;
+}
+
+.cartItems {
+  width: 736px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cartItem {
+  width: 736px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.cartItem h2 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+
+.cartItemImage {
+  width: 256px;
+  height: 211px;
+  object-fit: cover;
+  border-start-start-radius: 8px;
+  border-end-start-radius: 8px;
+}
+
+.quantitySelect {
+  width: 65px;
+  height: 40px;
+  background-color: #f3f5f6;
+  border-radius: 8px;
+  border: 1px solid #a8a8b3;
+  padding-left: 12px;
+}
+
+.removeButton {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.orderSummary {
+  width: 352px;
+  height: 700px;
+  top: 120px;
+  left: 928px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #ffffff;
+}
+.orderSummary h2 {
+  font-family: Saira;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+
+  padding: 24px 16px 16px 24px;
+}
+
+.summaryItem {
+  font-family: Saira;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin: 12px 24px 12px 24px;
+}
+
+.summaryTotal {
+  font-family: Saira;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 24px 40px 24px;
+  border-top: 1px solid #dce2e5;
+  padding-top: 8px;
+}
+
+.checkoutButton {
+  font-family: Saira;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  width: 303px;
+  height: 44px;
+  background-color: #51b853;
+  color: #F5F5FA;
+  margin-left: 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

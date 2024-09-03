@@ -1,33 +1,29 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useCart } from '@/src/context/index'; // Importa o hook
 import products from '@/src/data/products';
 import styles from './styles.module.css';
-
-
 
 const ProductPage = () => {
   const router = useRouter();
   const { id } = router.query;
   const product = products.find((p) => p.id === Number(id));
 
-
-  
+  const { addToCart } = useCart(); // Hook para adicionar ao carrinho
 
   if (!product) {
     return <div>Produto não encontrado</div>;
   }
 
-  const [cartCount, setCartCount] = useState(0);
   const handleAddToCart = () => {
-    // Atualiza o estado do carrinho aqui (implementação simplificada)
-    setCartCount(cartCount + 1);
-    router.push('/cart');
+    addToCart(product);
+    router.push('/cart'); // Redireciona para a página do carrinho
   };
 
   return (
-<div className={styles.productDetail}>
+    <div className={styles.productDetail}>
       <button className={styles.returnButton} onClick={() => router.back()}>
-        <img src="/assets/return.png" alt="Voltar" className={styles.returnIcon} /> <p>Voltar</p> </button>
+        <img src="/assets/return.png" alt="Voltar" className={styles.returnIcon} /> <p>Voltar</p>
+      </button>
       <div className={styles.productContainer}>
         <img src={product.image} alt={product.name} className={styles.productImage} />
         <div className={styles.productInfo}>
@@ -38,8 +34,8 @@ const ProductPage = () => {
           <h2>DESCRIÇÃO</h2>
           <p className={styles.description}>{product.description}</p>
 
-          <button onClick={handleAddToCart}  className={styles.button_buy}>
-          <img className={styles.button_shopping__icon}  src="/assets/button-buy.png" alt="Shopping Cart" />Adicionar ao carrinho
+          <button onClick={handleAddToCart} className={styles.button_buy}>
+            <img className={styles.button_shopping__icon} src="/assets/button-buy.png" alt="Shopping Cart" />Adicionar ao carrinho
           </button>
         </div>
       </div>
