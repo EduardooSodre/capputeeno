@@ -25,6 +25,14 @@
   padding-left: 10%;
   padding-top: 25px;
 }
+
+.divisao{
+  display: flex; 
+}
+
+.divisao .orderSummary{
+margin-left: 2rem;
+}
 .cartPage h1 {
   font-family: Saira;
   font-weight: 500;

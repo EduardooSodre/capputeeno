@@ -25,6 +25,7 @@ const CartPage = () => {
       <h1>SEU CARRINHO</h1>
       <p>Total ({cart.length} produtos): R${subtotal.toFixed(2)}</p>
 
+<div className={styles.divisao}>
       {/* Lista de produtos no carrinho */}
       <div className={styles.cartItems}>
         {cart.map((product) => (
@@ -86,6 +87,7 @@ const CartPage = () => {
         <button className={styles.checkoutButton}>FINALIZAR A COMPRA</button>
       </div>
     </div>
+  </div>
   );
 };
 
