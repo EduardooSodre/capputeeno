@@ -101,7 +101,7 @@ const CartPage = () => {
             <span>Total</span>
             <span>R${(subtotal + frete).toFixed(2)}</span>
           </div>
-          <button className={styles.checkoutButton}>FINALIZAR A COMPRA</button>
+          <button className={styles.checkoutButton}onClick={() => alert('Compra realizada com sucesso')}>FINALIZAR A COMPRA</button>
         </div>
       </div>
     </div>

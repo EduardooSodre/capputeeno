@@ -7,8 +7,8 @@ import { CartProvider } from '../context/index';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <CartProvider>
-    <Header/>
-    <Component {...pageProps} />
+      <Header/>
+      <Component {...pageProps} />
     </CartProvider>
 );
 }

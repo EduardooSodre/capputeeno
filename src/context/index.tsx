@@ -25,22 +25,29 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
 
   // Carregar carrinho do localStorage quando o componente for montado
   useEffect(() => {
-    const storedCart = localStorage.getItem('cart');
-    if (storedCart) {
-      setCart(JSON.parse(storedCart));
+    if (typeof window !== 'undefined') { // Verifica se o código está rodando no lado do cliente
+      const storedCart = localStorage.getItem('cart');
+      if (storedCart) {
+        try {
+          setCart(JSON.parse(storedCart)); // Se existir um carrinho salvo, seta o estado com ele
+        } catch (error) {
+          console.error("Erro ao carregar o carrinho do localStorage", error);
+        }
+      }
     }
   }, []);
 
   // Salvar carrinho no localStorage sempre que ele for atualizado
   useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cart));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('cart', JSON.stringify(cart)); // Salva no localStorage sempre que o carrinho mudar
+    }
   }, [cart]);
 
   // Adicionar item ao carrinho
   const addToCart = (product: CartItem) => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find((item) => item.id === product.id);
-
       if (existingProduct) {
         // Se o produto já estiver no carrinho, atualiza a quantidade
         return prevCart.map((item) =>
@@ -57,7 +64,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
 
   // Remover item do carrinho
   const removeFromCart = (id: number) => {
-    setCart(cart.filter((product) => product.id !== id));
+    setCart((prevCart) => prevCart.filter((product) => product.id !== id));
   };
 
   // Atualizar a quantidade de um item no carrinho
