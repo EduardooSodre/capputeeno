@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
 
+  margin-top: 1%;
+
 }
 .returnIcon {
   width: 100%;
@@ -12,7 +14,7 @@
 }
 
 .returnButton p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   margin-left: 0.75rem;
   font-family: Saira;
   font-weight: 500;
@@ -22,8 +24,7 @@
 
 
 .cartPage {
-  padding-left: 10%;
-  padding-top: 25px;
+  margin-left: 10%;
 }
 
 .divisao{
