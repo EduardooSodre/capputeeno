@@ -5,8 +5,9 @@ import { useEffect, useState } from "react";
 
 const CartPage = () => {
   const router = useRouter();
-  const { cart, removeFromCart, updateCartItem } = useCart(); // Supondo que você tenha esta função no contexto
+  const { cart, removeFromCart, updateCartItem } = useCart(); // Supondo que você tenha essa função no contexto
   const [subtotal, setSubtotal] = useState(0);
+  const [frete, setFrete] = useState(40); // Valor inicial do frete
 
   // Função para calcular o subtotal
   useEffect(() => {
@@ -15,6 +16,13 @@ const CartPage = () => {
       0
     );
     setSubtotal(calculatedSubtotal);
+
+    // Se o subtotal for maior ou igual a R$ 900,00, frete grátis
+    if (calculatedSubtotal >= 900) {
+      setFrete(0);
+    } else {
+      setFrete(40);
+    }
   }, [cart]);
 
   // Função para atualizar a quantidade
@@ -87,11 +95,11 @@ const CartPage = () => {
           </div>
           <div className={styles.summaryItem}>
             <span>Entrega</span>
-            <span>R$40,00</span>
+            <span>{frete === 0 ? "Grátis" : `R$${frete.toFixed(2)}`}</span>
           </div>
           <div className={styles.summaryTotal}>
             <span>Total</span>
-            <span>R${(subtotal + 40).toFixed(2)}</span>
+            <span>R${(subtotal + frete).toFixed(2)}</span>
           </div>
           <button className={styles.checkoutButton}>FINALIZAR A COMPRA</button>
         </div>

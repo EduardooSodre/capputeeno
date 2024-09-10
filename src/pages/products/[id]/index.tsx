@@ -27,7 +27,8 @@ const ProductPage = () => {
       currency: 'BRL',
     }).format(price);
   };
-  
+
+
 
   return (
     <div className={styles.productDetail}>
