@@ -102,6 +102,12 @@ const CartPage = () => {
             <span>R${(subtotal + frete).toFixed(2)}</span>
           </div>
           <button className={styles.checkoutButton}onClick={() => alert('Compra realizada com sucesso')}>FINALIZAR A COMPRA</button>
+          <div className={styles.rodape}>
+          <a className={styles.link_rodape}>AJUDA</a>
+          <a className={styles.link_rodape}>REEMBOLSO</a>
+          <a className={styles.link_rodape}>ENTREGAS E FRETE</a>
+          <a className={styles.link_rodape}>TROCAS E DEVOLUÇÔES</a>
+          </div>
         </div>
       </div>
     </div>
